@@ -186,6 +186,12 @@ letter-spacing: 0.8px;
 
 .button-contact {
 	padding: 12px 15px;
+  
+}
+.button-hiden {
+  width: 30%;
+  margin: 0 auto;
+ 
 }
 .button:hover {
 	filter: hue-rotate(50deg);
@@ -195,8 +201,106 @@ letter-spacing: 0.8px;
     background-color: #da477f;
     box-shadow: inset 0px 0px 10px palevioletred;
   }
+ 
+   /* burger menu*/
   
+   .hidden-menu{
+    width: 50px;
+    height: 30px;
+    display: none;  
+
+}
+
+.hidden-menu label {
+    position: relative;
+    display: block;
+    height: 100%;
+    z-index: 6;
+    
+}
+.hidden-menu label:hover {
+  opacity: 1;
+}
+
+#check {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    right: 0;
+}
+.active {
+    display: block;
+       color:white ;
+    font-size: 30px;
+    padding: 15px 25px;
+    transition: 1s ease-in;
+}
+.active:hover {
+    background-color: #8C32F0;
+}
+
+[type=checkbox]:checked ~ label .lines .line{
+ z-index: 5;
+    background-color: violet;
+}
+
+.line{
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    position: absolute;
+    left: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.8s ease-in;
+}
+
+.line1{
+    top: 0;
+}
+
+.line3{
+    bottom: 0;
+}
+.line2{
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+[type=checkbox]:checked ~ label .lines .line2{
+    opacity: 0;
+}
+
+[type=checkbox]:checked ~ label .lines .line1{ 
+    transform: translateY(200%) rotate(45deg);
+}
+
+[type=checkbox]:checked ~ label .lines .line3{
+    transform: translateY(-200%)rotate(-45deg);
+}
+
+.header__toggle-menu{
+  width: 100%;
+    height: 80vh;
+    background-color: #020E35;;
+    position: absolute;
+    padding-top: 100px;
+    top: 0;
+   left: 0;
+    z-index: 5;
+    transition: 6s ease;
+    transform: translateY(-100%);
+    opacity: 1;
+    text-align: center;
+}
+
+
+[type=checkbox]:checked ~ .header__toggle-menu{
+   opacity: 0.8;
+    transform: translateX(0);
+} 
   
+  /*main block*/
   .main-page {
     position: relative;
     right: 0;

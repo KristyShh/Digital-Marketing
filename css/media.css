@@ -100,6 +100,7 @@
 @media (max-width: 850px) {
     .main-page__column {
         padding-top: 120px;
+        
     }
     .form__wraper {
         flex-direction: column;
@@ -146,6 +147,7 @@
     }
     .main-page_image {
         opacity: 1;
+        z-index: 0;
     }
    /* .main-page_image {
         display: none;
@@ -167,7 +169,7 @@ right: 0;
     }
     .main-page__column {
         padding-top: 110px;
-        width: 50%;
+        
     }
     h3 {
         font-size: 30px;
@@ -179,12 +181,12 @@ right: 0;
         display: flex;
         flex-direction: column;
         gap: 40px;
-        
-        
-        
     }
     .block__ux {
        max-width: 100%;
+    }
+    .button-see {
+        z-index: 2;
     }
 
 }
@@ -204,22 +206,41 @@ position: absolute;
 background-repeat: no-repeat;
 right: -100px;
 bottom: -16%;
+z-index: 0;
     
 }
+
 }
 @media (max-width: 650px) {
+
+    .nav {
+        display: none;
+    }
+   
+   .button-contact {
+    display: none;
+   }
+    .hidden-menu{
+        display: block;
+        
+    }
     .grid__brands {
         /*grid-template-columns: 1fr;*/
         display: flex;
         flex-direction: column;
-       
-        
-        
-        
     }
+        
+.main-page__title {
+    margin-bottom: 0px;
+}
+        
+    
     h5 {
         text-align: center;
-    }        
+    }  
+    h2 {
+        font-size: 68px;
+    }      
     .left p {
         text-align: center;
         margin: 0 auto;
@@ -249,5 +270,147 @@ bottom: -16%;
         width: 90%;
         height: 325px;
         
+    }
+    .main_bg {
+        display: none;
+    }
+    .main-page_image {
+        display: block;
+        height: 580px;
+      background-size: contain;
+      background-position: right;
+    }
+    .minutes {
+        top: 22%;
+        right: 59.5%;
+    }
+    .main-page__column {
+        
+        padding-top: 80px;
+    }
+    .main-page__column {
+        height: 580px;
+
+    }
+    .button-see {
+        margin-bottom: 240px;
+    }
+}
+@media (max-width: 600px) {
+    .main-page_image {
+        right: -10%;
+    }
+}
+@media (max-width: 550px) {
+    .main-page_image {
+        opacity: 0.6;;
+        
+    }
+    .aboutus__text {
+        font-size: 14px;
+        
+    }
+    h3 {
+        font-size: 27px;
+    }
+    h2 {
+        font-size: 58px;
+    }
+    .contact__button {
+        width: 50%;
+    }
+    .footer {
+        height: 100px;
+    }
+    .symbol svg{
+        display: inline-block;
+        height: 45px;
+        width: 42px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+}
+    @media (max-width: 550px) {
+    .block__app, .block__web, .block__ux {
+       width: 80%;
+    }
+    .services__blocks {
+        
+        align-items: center;
+    }
+}
+@media (max-width: 485px) {
+    .main-page_image {
+        display: none;
+    }
+    .main_bg {
+        display: block;
+        background-size: 60%;
+        bottom: 10%;
+        left: 23%;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .logo {
+        width: 80px;
+        height: 100px;
+    }
+    .button {
+        font-size: 10px;
+    }
+    .aboutus {
+        margin-top: -200px;
+       
+    }
+    h3 {
+        font-size: 20px;
+        
+    }
+    .aboutus .container {
+        padding-top: 70px;
+    }
+    .aboutus__text {
+        padding: 0 20px;
+    }
+    .services__blocks {
+        padding-top: 30px;
+    }
+    .question {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    .contacts__form-label {
+        font-size: 14px;
+        margin-bottom: 0;
+        line-height: 110%;
+    }
+    .active {
+        font-size: 24px;
+    }
+
+}
+@media (max-width: 400px) {
+    .services__text {
+        margin-bottom: 30px;
+    }
+    .services__title {
+        font-size: 20px;
+    }
+    .main_bg {
+        background-size: 50%;
+        bottom: 3.5%;
+        left: 30%;
+
+    }
+    .app, .web, .ux {
+        background-size: 70%;
+        background-position: center;
+    }
+    .web {
+
     }
 }
