@@ -1,5 +1,8 @@
 
 @media (max-width: 1050px) {
+    .container {
+        max-width: 1050px;
+    }
     .services__blocks {
         gap: 2px;
     }
@@ -10,20 +13,21 @@
     .container {
         max-width: 1024px;
     }
-  
    .grid__brands {
     row-gap: 30px;
    }
    iframe {
     width: 502px;
-    height: 310px;
-   
+    height: 310px;  
 }
 }
 
 
 
 @media (max-width: 1000px) {
+    .container {
+        max-width: 1000px;
+    }
     h1 {
         font-size: 76px;
     }
@@ -68,6 +72,9 @@
 }
 
 @media (max-width: 960px) {
+    .container {
+        max-width: 960px;
+    }
     .services__blocks {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -87,6 +94,9 @@
 }
 
 @media (max-width: 850px) {
+    .container {
+        max-width: 850px;
+    }
     .main-page__column {
         padding-top: 120px;
     }
@@ -141,6 +151,9 @@
 }
 
 @media (max-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
     
     .contact__button {
         width: 40%;
@@ -164,6 +177,9 @@
     
 }
 @media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
     h5 {
         font-size: 22px;
     }
@@ -184,6 +200,9 @@
 
 
 @media (max-width: 700px) {
+    .container {
+        max-width: 700px;
+    }
     .services__blocks {
         display: flex;
         flex-direction: column;
@@ -196,9 +215,6 @@
         z-index: 2;
     }
 
-}
-
-@media (max-width: 700px) {
     .main-page_image {
         display: none;
     }
@@ -319,12 +335,18 @@
 }
 
 @media (max-width: 600px) {
+    .container {
+        max-width: 600px;
+    }
     .main-page_image {
         right: -10%;
     }
 }
 
 @media (max-width: 550px) {
+    .container {
+        max-width: 550px;
+    }
     .main-page_image {
         opacity: 0.6;;  
     }
@@ -431,6 +453,9 @@
 
 }
 @media (max-width: 400px) {
+    .container {
+        max-width: 400px;
+    }
     .services__text {
         margin-bottom: 30px;
     }
@@ -483,6 +508,9 @@
 }
 
 @media (max-width: 335px) {
+    .container {
+        max-width: 335px;
+    }
     .logo {
         width: 60px;
         height: 80px;
