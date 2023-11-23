@@ -593,5 +593,8 @@ h2 {
 .logotype {
     transform: translate(300px);
 }
+.button-hiden {
+    width: 50%;
+}
 }
 
